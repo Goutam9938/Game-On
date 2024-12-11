@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuttack</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuttack Handicrafts</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f7f7f7;
+            }
+    
+            header {
+                background-color: #0e133c;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .container {
+                width: 90%;
+                margin: 40px auto;
+                justify-content: center;
+                align-items: center;
+                /* margin-left: 15%; */
+            }
+    
+            .section-title {
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 20px;
+                color: #0e133c;
+            }
+    
+            .products {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-evenly;
+            }
+    
+            .product-card {
+                width: 24%;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .product-card:hover {
+                transform: scale(1.05);
+            }
+    
+            .product-image {
+                width: 100%;
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+            }
+    
+            .product-info {
+                padding: 15px;
+                text-align: center;
+            }
+    
+            .product-title {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+    
+            .product-description {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 15px;
+            }
+    
+            .product-price {
+                font-size: 16px;
+                font-weight: bold;
+                color: #0e133c;
+            }
+    
+            @media (max-width: 768px) {
+                .product-card {
+                    width: 48%;
+                }
+            }
+    
+            @media (max-width: 576px) {
+                .product-card {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <h1>the most beautiful Handicrafts Collection of cuttack</h1>
+    </header>
+    
+    <div class="container">
+        <h2 class="section-title">Explore the Unique Handicrafts of Cuttack</h2>
+    
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://cdn.shopify.com/s/files/1/0155/8131/files/Pinterest_b50c853f-d78c-4d1e-8f91-d7bc51f242b2_480x480.jpg?v=1712028433 ');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Lacquerwork</h3>
+                    <p class="product-description">lacquerwork, certain metallic and wood objects to which coloured and frequently opaque varnishes called lacquer are applied.</p>
+                    <p class="product-price">$120</p>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://cdn.shopify.com/s/files/1/0155/8131/files/facebook_480x480.jpg?v=1712028549 ');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Filigree Bangle</h3>
+                    <p class="product-description">Zari work is an intricate art of weaving threads made up of fine gold or silver</p>
+                    <p class="product-price">$80</p>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Patta_Chitra_03.jpg ');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Pattachitra</h3>
+                    <p class="product-description">Pattachitra is one of the ancient artworks of Odisha, originally created for ritual use and as souvenirs for pilgrims to Puri, as well as other temples in Odisha.</p>
+                    <p class="product-price">$45</p>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://www.khanduapata.com/wp-content/uploads/2020/07/WhatsApp-Image-2020-07-10-at-3.29.45-PM17.jpeg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">khandua pata</h3>
+                    <p class="product-description">Khandua (Also Maniabandi or Kataki) is a traditional "bandha" or ikat sari produced from Odisha worn by women during wedding and a special type of which is worn by Jagannath. The clothes contain texts of Gita Govinda on them.</p>
+                    <p class="product-price">$100</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/%E0%A6%AC%E0%A6%BE%E0%A6%97%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0_%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%A8_%E0%A6%A6%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%97%E0%A7%8B%E0%A7%8E%E0%A6%B8%E0%A6%AC_%E0%A7%A8%E0%A7%A6%E0%A7%A7%E0%A7%AE.jpg') ;"></div>
+                <div class="product-info">
+                    <h3 class="product-title">tarakasi work</h3>
+                    <p class="product-description">tarakasi is a type of silver filigree work from cuttack,a city in odisha in the eastern part of odisha </p>
+                    <p class="product-price">$100</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://cdn.shopify.com/s/files/1/0155/8131/files/magic-moments_in_480x480.jpg?v=1712030918');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Perracotta and pottery</h3>
+                    <p class="product-description">the earthy charm of terracotta and poterry from odisha shows the connection between the states culture and its natural surroundings.this craft of odisha is not only functional but also carries with it the essence of simplicity and beauty</p>
+                    <p class="product-price">$100</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

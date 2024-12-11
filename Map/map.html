@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gompa Route Finder</title>
+  <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy5THGl7rRPLAsMMMyavVFLF4ZlG-3g1fBq&libraries=places"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    #currentLocationBtn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center">Unearthed Odisha Route Finder</h2>
+    <button id="currentLocationBtn" class="btn btn-success">Show Current Location</button>
+    <form id="routeForm" class="mt-3">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="startLocation">Start Location:</label>
+          <input type="text" id="startLocation" class="form-control" placeholder="Enter start location">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="endLocation">End Location:</label>
+          <input type="text" id="endLocation" class="form-control" placeholder="Enter end location">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Find Route</button>
+    </form>
+    <div id="map"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingaraj Temple</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyElY-Wuv5UfteGNP3Ln5yzZLAn09L94jcc&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Unearthed Odisha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="New folder/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Hotels/demo2.html">Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Demo.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Demo.html">Handcrafts</a></li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop>
+            <source src="./images/video.mp4" type="video/mp4"> <!-- Replace with your video file -->
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+        <!-- Content -->
+        <div style="text-align: center; padding: 20px; font-family: 'Georgia', serif;">
+            <h1 style="font-size: 4rem; font-weight: bold; color: #1a5276; text-transform: uppercase; letter-spacing: 3px; text-shadow: 4px 4px 6px rgba(26, 82, 118, 0.5);">
+                Lingaraj Temple
+            </h1>
+            <p style="font-size: 1.8rem; color: #5d6d7e; font-style: italic; margin-top: 10px; letter-spacing: 1.5px; text-shadow: 2px 2px 3px rgba(93, 109, 126, 0.3);">
+                A Divine Marvel in the Heart of Bhubaneswar
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">About Lingaraj Temple</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Lingaraj Temple, one of the most significant temples in Odisha, is dedicated to Lord Shiva. Located in the heart of Bhubaneswar, this 11th-century architectural masterpiece is an exemplary representation of Kalinga architecture. The temple complex, with its towering spire and intricately sculpted walls, stands as a remarkable symbol of ancient craftsmanship. The Lingaraj Temple is one of the largest temples in the city and is an important pilgrimage destination, attracting devotees from all over the world.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Background Image Slider -->
+                    <div class="bgImage bgImage-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section class="section" id="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Famous Food & Culture</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Background Image Slider -->
+                    <div class="bgImage bgImage-2"></div>
+                </div>
+                
+                <div class="col-md-6">
+                    <p>Bhubaneswar and the Lingaraj Temple are not only rich in spirituality but also in culinary delights. Some of the popular dishes include:</p>
+                    <ul>
+                        <li><b>Dalma:</b> A traditional lentil stew with vegetables, often served with rice.</li>
+                        <li><b>Chhena Poda:</b> A famous sweet made from cottage cheese, sugar, and cardamom.</li>
+                        <li><b>Rasabali:</b> A dessert made from chhena (cottage cheese) and flavored with cardamom and jaggery.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Attractions Section -->
+    <section class="section" id="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Nearby Tourist Attractions</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><b>Udayagiri & Khandagiri Caves:</b> Ancient rock-cut caves dating back to the 2nd century BC, located about 10 km from the temple.</li>
+                        <li><b>Nandankanan Zoological Park:</b> A wildlife sanctuary with a variety of species, about 15 km from Lingaraj Temple.</li>
+                        <li><b>Mukteshwar Temple:</b> Another famous Shiva temple known for its architectural beauty, about 6 km from the Lingaraj Temple.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <!-- Background Image Slider -->
+                    <div class="bgImage bgImage-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">How to Get There</h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Mode</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>By Air</td>
+                        <td>The nearest airport is Biju Patnaik International Airport, Bhubaneswar, about 6 km from the temple.</td>
+                    </tr>
+                    <tr>
+                        <td>By Train</td>
+                        <td>Bhubaneswar Railway Station is well-connected, with frequent trains to all major cities.</td>
+                    </tr>
+                    <tr>
+                        <td>By Road</td>
+                        <td>The temple is easily accessible by road from various parts of the city.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Visitor Info Section -->
+    <section class="section" id="visitor-info" style="padding: 40px 0; background-color: #f4f4f4;" data-aos="fade-up">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" style="font-size: 2.5rem; text-align: center; color: #1a5276; font-weight: bold; margin-bottom: 30px; text-transform: uppercase;">
+                Plan Your Visit
+            </h2>
+            <div class="row">
+                <!-- Best Time to Visit -->
+                <div class="col-md-4" style="margin-bottom: 20px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                    <h5 class="text-center" style="font-size: 1.8rem; color: #2980b9; font-weight: bold; margin-bottom: 15px;">Best Time to Visit</h5>
+                    <p style="font-size: 1rem; color: #555; line-height: 1.6;">
+                        The best time to visit Lingaraj Temple is during the **winter months** (October to March), when the weather is cool and pleasant.
+                    </p>
+                </div>
+                <!-- Local Customs and Culture -->
+                <div class="col-md-4" style="margin-bottom: 20px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                    <h5 class="text-center" style="font-size: 1.8rem; color: #2980b9; font-weight: bold; margin-bottom: 15px;">Local Customs</h5>
+                    <p style="font-size: 1rem; color: #555; line-height: 1.6;">
+                        Visitors are expected to dress modestly. It is customary to offer prayers and flowers at the temple for blessings.
+                    </p>
+                </div>
+                <!-- Nearby Accommodation -->
+                <div class="col-md-4" style="margin-bottom: 20px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                    <h5 class="text-center" style="font-size: 1.8rem; color: #2980b9; font-weight: bold; margin-bottom: 15px;">Accommodation</h5>
+                    <p style="font-size: 1rem; color: #555; line-height: 1.6;">
+                        Bhubaneswar offers a range of accommodation options, from budget hotels to luxury stays, within close proximity to Lingaraj Temple.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="text-align: center;">
+        <h3 style="font-size: 2em; font-weight: bold; color: #333; margin-bottom: 20px;">Lingaraj Temple, Bhubaneswar</h3>
+        <div id="map" style="width: 80%; height: 500px; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Unearthed Odisha. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+    
+
+     <!-- JS Libraries -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script>
+         AOS.init();
+ 
+         // Initialize Particles.js
+         particlesJS("particles-js", {
+           
+         });
+     </script>
+    </script>
+    <script>
+        const reviewsPerPage = 3;
+        let showingAllReviews = false;
+        const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+    
+        const reviewList = document.getElementById('reviewList');
+        const toggleReviewsBtn = document.getElementById('toggleReviewsBtn');
+        const reviewModal = document.getElementById('reviewModal');
+        const reviewerName = document.getElementById('reviewerName');
+        const reviewRating = document.getElementById('reviewRating');
+        const reviewText = document.getElementById('reviewText');
+        const reviewImage = document.getElementById('reviewImage');
+        const reviewVideo = document.getElementById('reviewVideo');
+        const saveReviewBtn = document.getElementById('saveReviewBtn');
+    
+        const fullScreenModal = document.getElementById('fullScreenModal');
+        const fullScreenImage = document.getElementById('fullScreenImage');
+    
+        const renderReviews = () => {
+            reviewList.innerHTML = '';
+            const reviewsToShow = showingAllReviews ? reviews : reviews.slice(0, reviewsPerPage);
+    
+            reviewsToShow.forEach((review, index) => {
+                const div = document.createElement('div');
+                div.classList.add('review-item');
+                div.innerHTML = `
+                    <h3>${review.name}</h3>
+                    <p>${'⭐'.repeat(review.rating)}</p>
+                    <p>${review.text}</p>
+                    ${review.image ? `<img src="${review.image}" alt="Review Image" onclick="openFullScreen('${review.image}')">` : ''}
+                    ${review.video ? `<video controls src="${review.video}"></video>` : ''}
+                    <p class="date">${review.date}</p>
+                    <div class="three-dots" onclick="toggleMenu(event, ${index})">...</div>
+                    <div class="menu" id="menu-${index}" style="display: none;">
+                        <button onclick="editReview(${index})">Edit</button>
+                        <button onclick="deleteReview(${index})">Delete</button>
+                    </div>
+                `;
+                reviewList.appendChild(div);
+            });
+    
+            toggleReviewsBtn.style.display = reviews.length > reviewsPerPage ? 'block' : 'none';
+        };
+    
+        const toggleMenu = (event, index) => {
+            event.stopPropagation();
+            const menu = document.getElementById(`menu-${index}`);
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        };
+    
+        const editReview = (index) => {
+            const review = reviews[index];
+            reviewerName.value = review.name;
+            reviewRating.value = review.rating;
+            reviewText.value = review.text;
+            reviewImage.value = '';
+            reviewVideo.value = '';
+            saveReviewBtn.onclick = () => {
+                review.name = reviewerName.value.trim();
+                review.rating = parseInt(reviewRating.value);
+                review.text = reviewText.value.trim();
+                review.image = reviewImage.files[0] ? URL.createObjectURL(reviewImage.files[0]) : review.image;
+                review.video = reviewVideo.files[0] ? URL.createObjectURL(reviewVideo.files[0]) : review.video;
+                review.date = new Date().toLocaleDateString();
+                saveReviews();
+            };
+            reviewModal.style.display = 'flex';
+        };
+    
+        const deleteReview = (index) => {
+            reviews.splice(index, 1);
+            saveReviews();
+        };
+    
+        const addReview = () => {
+            const name = reviewerName.value.trim();
+            const rating = parseInt(reviewRating.value);
+            const text = reviewText.value.trim();
+            const image = reviewImage.files[0] ? URL.createObjectURL(reviewImage.files[0]) : null;
+            const video = reviewVideo.files[0] ? URL.createObjectURL(reviewVideo.files[0]) : null;
+            const date = new Date().toLocaleDateString();
+            reviews.push({ name, rating, text, image, video, date });
+            saveReviews();
+        };
+    
+        const saveReviews = () => {
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+            renderReviews();
+            reviewModal.style.display = 'none';
+        };
+    
+        const toggleReviewView = () => {
+            showingAllReviews = !showingAllReviews;
+            renderReviews();
+        };
+    
+        const openFullScreen = (imageSrc) => {
+            fullScreenImage.src = imageSrc;
+            fullScreenModal.style.display = 'flex';
+        };
+    
+        fullScreenModal.onclick = () => {
+            fullScreenModal.style.display = 'none';
+        };
+    
+        document.getElementById('addReviewBtn').onclick = () => {
+            reviewerName.value = '';
+            reviewRating.value = '';
+            reviewText.value = '';
+            reviewImage.value = '';
+            reviewVideo.value = '';
+            saveReviewBtn.onclick = addReview;
+            reviewModal.style.display = 'flex';
+        };
+    
+        toggleReviewsBtn.onclick = toggleReviewView;
+        reviewModal.onclick = (e) => {
+            if (e.target === reviewModal) reviewModal.style.display = 'none';
+        };
+    
+        renderReviews();
+        function initMap() {
+            // Correct Coordinates for Lingaraj Temple, Bhubaneswar
+            var lingarajLocation = { lat: 20.237900, lng: 85.814705 };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,  // Set zoom level
+                center: lingarajLocation,  // Set center to Lingaraj Temple
+            });
+
+            var marker = new google.maps.Marker({
+                position: lingarajLocation,
+                map: map,
+                title: "Lingaraj Temple",  // Title for the marker
+            });
+        }
+        
+    </script>
+    
+</body>
+</html>
