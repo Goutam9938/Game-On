@@ -27,11 +27,14 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="../unearthed.html" class="active">Home</a></li>
-            <li><a href="#events">Hotels</a></li>
-            <li><a href="#explore">Guide</a></li>
-            <li><a href="#tours">Handcrafts</a></li>
-            <li><a href="#about">Map</a></li>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="http://localhost:5173/hotelbooking">Hotels</a></li>
+            <li><a href="../Map/map.html">Map</a></li>
+            <button 
+                onclick="window.location.href='http://192.168.167.33:8080/signin'" 
+                class="btn btn-success">
+                Crop Crafts
+            </button>
         </ul>
     </nav>
     <!--navbar-->
@@ -149,6 +152,42 @@
         </section>
         <!--tours-->
     </div>
+    <div>
+        <!--tours-->
+        <section class="tours" id="tours">
+            <div class="container row">
+                <div class="col content-col">
+                    <h1 class="font-color">LOCAL HANDCRAFTS</h1>
+                    <div class="line"></div>
+                    <p>
+                        <b>Silver Filigree:</b> Intricate handcrafted jewelry and ornaments made from silver wires.<br>
+                        <b>Brass and Bell Metal Works:</b> Traditional utensils, decorative items, and artifacts crafted from brass and bell metal.<br>
+                        <b>Dhokra Art:</b> A form of ancient metal casting, producing unique tribal figurines and ornaments.<br>
+                        <b>Terracotta Crafts:</b> Beautiful clay sculptures and decorative items, inspired by local culture.<br>
+                    </p>
+                </div>
+                <div class="image-col">
+                    <div class="image-gallery">
+                        <a href="http://192.168.167.33:8080/products?category=Silver" target="_blank">
+                            <img src="./img/sf.jpg" alt="Silver Filigree" />
+                        </a>
+                        <a href="http://192.168.167.33:8080/products?category=Brass" target="_blank">
+                            <img src="./img/sf2.jpg" alt="Brass and Bell Metal Works" />
+                        </a>
+                        <a href="http://192.168.167.33:8080/products?category=Dhokra" target="_blank">
+                            <img src="./img/sf3.jpg" alt="Dhokra Art" />
+                        </a>
+                        <a href="http://192.168.167.33:8080/products?category=Terracotta" target="_blank">
+                            <img src="./img/sf4.webp" alt="Terracotta Crafts" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+        </section>
+        <!--tours-->
+    </div>
+    
 
     <!-- up scroll -->
     <i class="arrow" onclick="topFunction()" id="upbtn"></i>

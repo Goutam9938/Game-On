@@ -6,14 +6,15 @@
   <title>Unearthed Odisha Route Finder</title>
   <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy5THGl7rRPLAsMMMyavVFLF4ZlG-3g1fBq&libraries=places"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
     #map {
       height: 500px;
       width: 100%;
       margin-top: 20px;
     }
-    .form-group label {
-      font-weight: bold;
+    #downloadMapBtn {
+      margin-top: 10px;
     }
     #currentLocationBtn {
       position: absolute;
@@ -41,7 +42,104 @@
       <button type="submit" class="btn btn-primary btn-block">Find Route</button>
     </form>
     <div id="map"></div>
+    <button id="downloadMapBtn" class="btn btn-secondary">Offline Map</button>
   </div>
-  <script src="script.js"></script>
+
+  <script>
+    let map, directionsService, directionsRenderer;
+
+    // Initialize the map and directions service
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 20.9517, lng: 85.0985 }, // Odisha coordinates
+        zoom: 8,
+      });
+
+      // Initialize Directions Service and Renderer
+      directionsService = new google.maps.DirectionsService();
+      directionsRenderer = new google.maps.DirectionsRenderer();
+      directionsRenderer.setMap(map);
+
+      // Enable autocomplete for input fields
+      const startInput = document.getElementById("startLocation");
+      const endInput = document.getElementById("endLocation");
+      new google.maps.places.Autocomplete(startInput);
+      new google.maps.places.Autocomplete(endInput);
+    }
+
+    // Calculate and display route
+    function calculateRoute() {
+      const start = document.getElementById("startLocation").value;
+      const end = document.getElementById("endLocation").value;
+
+      if (!start || !end) {
+        alert("Please enter both start and end locations.");
+        return;
+      }
+
+      directionsService.route(
+        {
+          origin: start,
+          destination: end,
+          travelMode: google.maps.TravelMode.DRIVING,
+        },
+        (response, status) => {
+          if (status === "OK") {
+            directionsRenderer.setDirections(response);
+          } else {
+            alert("Could not display directions due to: " + status);
+          }
+        }
+      );
+    }
+
+    // Show the current location on the map
+    function showCurrentLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const userLocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+            map.setCenter(userLocation);
+            map.setZoom(14);
+            new google.maps.Marker({
+              position: userLocation,
+              map: map,
+              title: "Your Current Location",
+            });
+          },
+          () => {
+            alert("Unable to fetch your location. Please enable location services.");
+          }
+        );
+      } else {
+        alert("Geolocation is not supported by your browser.");
+      }
+    }
+
+    // Download the visible map as an image
+    function downloadMapImage() {
+      const mapElement = document.getElementById("map");
+      html2canvas(mapElement).then((canvas) => {
+        const link = document.createElement("a");
+        link.download = "route-map.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+    }
+
+    // Event listeners for map actions
+    window.onload = () => {
+      initMap();
+      document.getElementById("routeForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        calculateRoute();
+      });
+      document.getElementById("currentLocationBtn").addEventListener("click", showCurrentLocation);
+      document.getElementById("downloadMapBtn").addEventListener("click", downloadMapImage);
+    };
+  </script>
 </body>
 </html>

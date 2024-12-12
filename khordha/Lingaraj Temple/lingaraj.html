@@ -35,7 +35,7 @@
                         <button 
                             onclick="window.location.href='http://192.168.167.33:8080/signin'" 
                             class="btn btn-success">
-                            Crop Crafts
+                            Handcrafts
                         </button></li>
                 </ul>    
             </div>
@@ -183,6 +183,67 @@
         <h3 style="font-size: 2em; font-weight: bold; color: #333; margin-bottom: 20px;">Lingaraj Temple, Bhubaneswar</h3>
         <div id="map" style="width: 80%; height: 500px; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></div>
     </div>
+    <!-- Floating Icon -->
+  <div class="floating-icon" id="guiderIcon">
+    🧭 <span>Guider</span>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <!-- Close Button -->
+    <button class="close-btn" id="closePopup">X</button>
+
+    <!-- District View -->
+    <div class="popup-content" id="districtsContent">
+      <h3>Guides by District</h3>
+      <ul class="district-list">
+        <li>
+          <strong>East Odisha</strong>
+          <div class="guide" data-guide="1">
+            <img src="./images/ppt.jpg" alt="Guide 1" class="guide-img">
+            <div class="guide-info">
+              <h4 class="guide-name">Goutam Nayak</h4>
+              <p>⭐ 4.5 | Languages: English,Hindi,Odia</p>
+              <button class="see-details-btn">See Details</button>
+            </div>
+          </div>
+          <button class="see-more-guides-btn" data-district="east">See More Guides</button>
+        </li>
+        <li>
+          <strong>South Odisha</strong>
+          <div class="guide" data-guide="2">
+            <img src="./images/ppt2.jpg" alt="Guide 2" class="guide-img">
+            <div class="guide-info">
+              <h4 class="guide-name">Alekha Kumar Swain</h4>
+              <p>⭐ 5.0 | Languages: English, Odia</p>
+              <button class="see-details-btn">See Details</button>
+            </div>
+          </div>
+          <button class="see-more-guides-btn" data-district="south">See More Guides</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Guide Details View -->
+    <div class="popup-content hidden" id="guideDetails">
+      <button class="see-back-btn" id="backToDistricts">Back</button>
+      <div class="guide-profile">
+        <img id="profileImg" src="./images/ppt.jpg" alt="Guide Profile">
+        <h3 id="guideName">Goutam Nayak</h3>
+        <p id="guideRating">⭐ 4.5 | Languages: English, Hindi,Odia</p>
+        <p id="guideBio">This guide specializes in cultural tours across Odisha.</p>
+      </div>
+      <h4>Reviews:</h4>
+      <ul id="reviewsList">
+        <li>“Great guide, very knowledgeable!” - ⭐ 5</li>
+        <li>“Friendly and professional.” - ⭐ 4.5</li>
+      </ul>
+      <div class="contact-options">
+        <button class="chat-btn">Chat</button>
+        <button class="call-btn">Call</button>
+      </div>
+    </div>
+  </div>
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2024 Unearthed Odisha. All rights reserved.</p>

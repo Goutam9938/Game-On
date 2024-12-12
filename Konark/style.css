@@ -379,3 +379,97 @@ background-image: url(./images/k3.jpg);
         transform: translateY(0);
     }
 }
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .district-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .guide {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .guide-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .guide-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .contact-options {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-btn,
+  .call-btn {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .chat-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .call-btn {
+    background-color: #17a2b8;
+    color: #fff;
+  }

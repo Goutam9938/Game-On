@@ -135,3 +135,6 @@ function createMarker(place) {
 
 // Initialize the map
 initMap();
+
+
+

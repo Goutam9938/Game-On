@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
       east: [
         {
           id: 1,
-          name: "Guide 1",
+          name: "Goutam Nayak",
           rating: "⭐ 4.5",
-          languages: "English, Hindi",
+          languages: "English, Hindi,Odia",
           bio: "This guide specializes in cultural tours across East Odisha.",
           reviews: ["“Great guide!” - ⭐ 5", "“Very professional.” - ⭐ 4.5"],
           image: "https://via.placeholder.com/100"
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       south: [
         {
           id: 2,
-          name: "Guide 2",
+          name: "Alekha Kumar Swain",
           rating: "⭐ 5.0",
           languages: "English, Odia",
           bio: "This guide focuses on nature and wildlife tours in South Odisha.",

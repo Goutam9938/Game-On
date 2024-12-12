@@ -15,14 +15,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyElY-Wuv5UfteGNP3Ln5yzZLAn09L94jcc&callback=initMap" async defer></script>
+    <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy5THGl7rRPLAsMMMyavVFLF4ZlG-3g1fBq" async defer></script>
     
 </head>
 
 <body>
     <!-- Your unchanged content remains here -->
       <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Unearthed Odisha</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,10 +30,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="New folder/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./Hotels/demo2.html">Hotels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Demo.html">Map</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Demo.html">Handcrafts</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:5173/hotelbooking">Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Map/map.html">Map</a></li>
+                    <button 
+                onclick="window.location.href='http://192.168.167.33:8080/signin'" 
+                class="btn btn-success">
+                Handcrafts
+            </button>
                 </ul>    
             </div>
         </div>
@@ -212,10 +216,10 @@
         <li>
           <strong>East Odisha</strong>
           <div class="guide" data-guide="1">
-            <img src="https://via.placeholder.com/50" alt="Guide 1" class="guide-img">
+            <img src="./images/ppt.jpg" alt="Guide 1" class="guide-img">
             <div class="guide-info">
-              <h4 class="guide-name">Guide 1</h4>
-              <p>⭐ 4.5 | Languages: English, Hindi</p>
+              <h4 class="guide-name">Goutam Nayak</h4>
+              <p>⭐ 4.5 | Languages: English,Hindi,Odia</p>
               <button class="see-details-btn">See Details</button>
             </div>
           </div>
@@ -224,9 +228,9 @@
         <li>
           <strong>South Odisha</strong>
           <div class="guide" data-guide="2">
-            <img src="https://via.placeholder.com/50" alt="Guide 2" class="guide-img">
+            <img src="./images/ppt2.jpg" alt="Guide 2" class="guide-img">
             <div class="guide-info">
-              <h4 class="guide-name">Guide 2</h4>
+              <h4 class="guide-name">Alekha Kumar Swain</h4>
               <p>⭐ 5.0 | Languages: English, Odia</p>
               <button class="see-details-btn">See Details</button>
             </div>
@@ -240,9 +244,9 @@
     <div class="popup-content hidden" id="guideDetails">
       <button class="see-back-btn" id="backToDistricts">Back</button>
       <div class="guide-profile">
-        <img id="profileImg" src="https://via.placeholder.com/100" alt="Guide Profile">
-        <h3 id="guideName">Guide Name</h3>
-        <p id="guideRating">⭐ 4.5 | Languages: English, Hindi</p>
+        <img id="profileImg" src="./images/ppt.jpg" alt="Guide Profile">
+        <h3 id="guideName">Goutam Nayak</h3>
+        <p id="guideRating">⭐ 4.5 | Languages: English, Hindi,Odia</p>
         <p id="guideBio">This guide specializes in cultural tours across Odisha.</p>
       </div>
       <h4>Reviews:</h4>
